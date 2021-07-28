@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    textarea {
+        min-width : 500px;
+        min-height : 220px;
+    }
+
+</style>
+<body>
+    <form action="/board/write" method="post">
+        작성자 <input type="text" name="author">
+        제목 <input type="text" name="title">
+        <div>내용</div>
+        <textarea name="content"></textarea>
+        <button type="submit">작성</button>
+    </form>
+</body>
+</html>
